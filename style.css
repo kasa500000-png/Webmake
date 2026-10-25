@@ -36,3 +36,11 @@ button,input,select,textarea{font-family:inherit}
 .eyebrow{letter-spacing:0;font-size:13px}
 .hero-callout strong,.dish-title h3,.menu-heading h3{font-weight:700}
 .card-copy p,.section-top p:not(.eyebrow){line-height:2}
+
+/* A fish-shaped daily board; the live menu remains readable HTML. */
+.today-special{position:relative;isolation:isolate;border:0;border-radius:0;background:none;padding:48px 20% 48px 18%;min-height:230px;text-align:center}
+.fish-board-shape{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;overflow:visible}
+.fish-board-eye{position:absolute;left:7%;top:43%;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px #d3b47a15}
+.today-special .today-top{justify-content:center;flex-wrap:wrap;gap:6px 12px}
+.today-special h2{font-size:clamp(24px,2.1vw,32px);margin:10px 0 8px}
+@media(max-width:700px){.today-special{padding:43px 18% 43px 17%;min-height:230px;margin-left:-10px;margin-right:-10px}.today-special h2{font-size:25px}.today-special .today-label{font-size:12px}.today-special .sale-badge{font-size:11px}.fish-board-eye{width:5px;height:5px}}
