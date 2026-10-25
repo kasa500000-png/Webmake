@@ -10,3 +10,5 @@ Thumbs.db
 .build/
 .neon
 test-results/
+dist/
+.vercel/
