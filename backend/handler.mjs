@@ -1,4 +1,4 @@
-const allowedOrigins = new Set(['https://kasa500000-png.github.io', 'http://localhost:4318', 'http://127.0.0.1:4318']);
+const allowedOrigins = new Set(['https://hwangdongtae.vercel.app', 'https://kasa500000-png.github.io', 'http://localhost:4318', 'http://127.0.0.1:4318']);
 
 export function koreaDate(now = new Date()) {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);

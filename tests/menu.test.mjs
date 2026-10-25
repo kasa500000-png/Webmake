@@ -59,6 +59,8 @@ test('CORS allows site and rejects unrelated origins', async () => {
   const fetch = createHandler({ repository: {}, verifyToken: async () => '' });
   const allowed = await fetch(new Request('https://api.test/today-menu', { method: 'OPTIONS', headers: { origin: 'https://kasa500000-png.github.io' } }));
   assert.equal(allowed.status, 204); assert.equal(allowed.headers.get('access-control-allow-origin'), 'https://kasa500000-png.github.io');
+  const vercel = await fetch(new Request('https://api.test/today-menu', { method: 'OPTIONS', headers: { origin: 'https://hwangdongtae.vercel.app' } }));
+  assert.equal(vercel.status, 204); assert.equal(vercel.headers.get('access-control-allow-origin'), 'https://hwangdongtae.vercel.app');
   const denied = await fetch(new Request('https://api.test/today-menu', { headers: { origin: 'https://evil.example' } }));
   assert.equal(denied.status, 403);
 });
