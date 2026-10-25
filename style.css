@@ -37,10 +37,12 @@ button,input,select,textarea{font-family:inherit}
 .hero-callout strong,.dish-title h3,.menu-heading h3{font-weight:700}
 .card-copy p,.section-top p:not(.eyebrow){line-height:2}
 
-/* A fish-shaped daily board; the live menu remains readable HTML. */
-.today-special{position:relative;isolation:isolate;border:0;border-radius:0;background:none;padding:48px 20% 48px 18%;min-height:230px;text-align:center}
-.fish-board-shape{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;overflow:visible}
-.fish-board-eye{position:absolute;left:7%;top:43%;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px #d3b47a15}
-.today-special .today-top{justify-content:center;flex-wrap:wrap;gap:6px 12px}
-.today-special h2{font-size:clamp(24px,2.1vw,32px);margin:10px 0 8px}
-@media(max-width:700px){.today-special{padding:43px 18% 43px 17%;min-height:230px;margin-left:-10px;margin-right:-10px}.today-special h2{font-size:25px}.today-special .today-label{font-size:12px}.today-special .sale-badge{font-size:11px}.fish-board-eye{width:5px;height:5px}}
+/* Two sketched pollock surround the live menu, leaving the center clear. */
+.today-special{display:grid;grid-template-columns:1fr;align-items:center;justify-items:center;width:100%;max-width:430px;margin:24px auto 0;padding:0;border:0;border-radius:0;background:none;text-align:center;isolation:isolate}
+.pollock-frame{grid-area:1/1;width:100%;height:auto;display:block;pointer-events:none;z-index:-1}
+.today-board-copy{grid-area:1/1;width:63%;padding:24px 0;min-width:0}
+.today-special .today-top{flex-direction:column;justify-content:center;gap:7px}
+.today-special h2{font-size:clamp(22px,2vw,29px);line-height:1.5;margin:10px 0 8px;text-wrap:balance}
+.today-special .today-date{font-size:12px}
+@media(max-width:700px){.today-special{max-width:370px;margin-top:22px}.today-special h2{font-size:23px}.today-special .today-label{font-size:12px}.today-special .sale-badge{font-size:11px}.today-board-copy{width:64%;padding:16px 0}}
+
