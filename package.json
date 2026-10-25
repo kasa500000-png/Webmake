@@ -2,7 +2,26 @@
   "name": "hwangdongtae-webmake",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "황동태 홈페이지 및 리뷰 전시관 목업",
-  "scripts": { "start": "node server.cjs", "check": "node --check game.js && node --check museum.js && node --check script.js && node --check sound.js && node --check server.cjs" },
-  "engines": { "node": ">=20" }
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check game.js && node --check museum.js && node --check script.js && node --check sound.js && node --check server.cjs && node --check admin.js && node --check today-menu.js && node --check backend/index.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@neon/functions": "0.11.0",
+    "@neondatabase/auth": "0.6.0-beta",
+    "jose": "6.2.13",
+    "pg": "8.23.1"
+  },
+  "overrides": { "zod": "4.6.7" },
+  "devDependencies": {
+    "@neon/config": "1.9.4",
+    "esbuild": "0.28.2"
+  }
 }
