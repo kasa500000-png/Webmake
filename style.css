@@ -46,3 +46,6 @@ button,input,select,textarea{font-family:inherit}
 .today-special .today-date{font-size:12px}
 @media(max-width:700px){.today-special{max-width:370px;margin-top:22px}.today-special h2{font-size:23px}.today-special .today-label{font-size:12px}.today-special .sale-badge{font-size:11px}.today-board-copy{width:64%;padding:16px 0}}
 .pollock-frame{filter:brightness(0) invert(1);opacity:.7}
+
+/* Align the daily board with the hero title after removing the intro. */
+.seasonal-hero .today-special{margin-left:0;margin-right:auto}
