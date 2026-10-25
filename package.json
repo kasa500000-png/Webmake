@@ -1,0 +1,8 @@
+{
+  "name": "hwangdongtae-webmake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "황동태 홈페이지 및 리뷰 전시관 목업",
+  "scripts": { "start": "node server.cjs", "check": "node --check game.js && node --check museum.js && node --check script.js && node --check sound.js && node --check server.cjs" },
+  "engines": { "node": ">=20" }
+}
