@@ -2,7 +2,9 @@
 
 울산 황동태의 홈페이지 제작 제안용 정적 웹사이트입니다. 모바일 홈페이지와 클릭으로 캐릭터가 움직이는 리뷰 전시관을 포함합니다.
 
-공개 홈페이지: https://hwangdongtae-review-gallery.shk1122.chatgpt.site
+공개 홈페이지: https://kasa500000-png.github.io/Webmake/
+
+리뷰 전시관: https://kasa500000-png.github.io/Webmake/game.html
 
 ## 다른 컴퓨터에서 시작하기
 
@@ -49,10 +51,16 @@ git push
 
 ## 배포와 이어서 작업
 
-공개 사이트는 Sites에서 배포 중입니다. **이 GitHub 저장소에 push하는 것만으로 공개 사이트가 자동 갱신되지는 않습니다.** 수정 후 Sites로 별도 배포하거나 다른 정적 호스팅에 이 폴더를 배포하세요.
+**GitHub Pages 자동 배포가 연결되어 있습니다.** `main` 브랜치에 push하면 저장소 루트의 홈페이지가 자동으로 배포됩니다. GitHub 웹에서 파일을 수정하고 `main`에 커밋해도 동일하게 반영됩니다. 반영까지 수 분이 걸릴 수 있습니다.
+
+- 배포 설정: 저장소 Settings → Pages → Deploy from a branch → `main` / `/ (root)`
+- 배포 진행 및 실패 확인: 저장소 Actions의 `pages build and deployment`
+- `.nojekyll`은 HTML·CSS·JavaScript를 그대로 게시하도록 유지합니다.
+- 별도 배포 토큰이나 로컬 서버 실행 없이 공개 주소를 이용할 수 있습니다.
+- 이전 주소 https://hwangdongtae-review-gallery.shk1122.chatgpt.site 는 기존 버전으로 남으며 GitHub 수정 사항이 자동 반영되지 않습니다. 새 공개 주소를 공유하세요.
 
 - Sites 프로젝트 ID: `appgprj_6add2f8766008191921f96ebae00aef6`
-- 반영된 공개 버전: 4 (모바일 카메라 중앙 구도 및 부드러운 추적 포함)
+- 이전 Sites 공개 버전: 4 (모바일 카메라 중앙 구도 및 부드러운 추적 포함)
 - Sites의 소스 저장소는 이 GitHub 저장소와 별개입니다. Sites 업데이트 시 해당 프로젝트를 열고 수정 파일을 동기화한 뒤 배포해야 합니다.
 - 인증 키·토큰은 저장소에 포함하지 않습니다.
 
