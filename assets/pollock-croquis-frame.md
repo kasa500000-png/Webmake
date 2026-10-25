@@ -1,0 +1,5 @@
+# Minimal fish croquis frame
+
+Created with the built-in image generation tool. Saved as pollock-croquis-frame.png. The black transparent line drawing is displayed as neutral light gray using CSS for contrast against the dark website.
+
+Prompt: Minimal BLACK INK LINE DRAWING on transparent background: two long slim fish curved around an empty circle, one along top half facing left, one along bottom half facing right, head to tail wreath. Very simple croquis doodle, each fish only 8 to 12 smooth loose black pen strokes TOTAL: two contours of body, small circle eye, single curved gill, three simple triangular fins, forked tail. NO shading, NO hatching, NO scales, NO spots, NO mottling, NO fill, NO splatter, NO texture, NO color, NO white paint. Clean sparse expressive monoline contours only. Looks like quick hand sketch from a restaurant chalkboard, NOT realistic detailed illustration. Transparent inside outlines and transparent large empty center. Square, ring leaves large 65% empty central opening, all strokes inside canvas with 4% margin. No text.

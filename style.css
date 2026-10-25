@@ -45,4 +45,4 @@ button,input,select,textarea{font-family:inherit}
 .today-special h2{font-size:clamp(22px,2vw,29px);line-height:1.5;margin:10px 0 8px;text-wrap:balance}
 .today-special .today-date{font-size:12px}
 @media(max-width:700px){.today-special{max-width:370px;margin-top:22px}.today-special h2{font-size:23px}.today-special .today-label{font-size:12px}.today-special .sale-badge{font-size:11px}.today-board-copy{width:64%;padding:16px 0}}
-
+.pollock-frame{filter:brightness(0) invert(1);opacity:.7}
